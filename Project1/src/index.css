@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.root {
+.main {
     background-color: rgb(44, 43, 43);
     height: 100vh;
     /* Full screen height */
@@ -48,8 +48,9 @@
 
 .skill-head{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+        justify-content: center;
+        align-items: flex-start;
+        margin: -200px 0 0 -200px;
 }
 
 .skill-main{
