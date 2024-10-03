@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* General reset and box-sizing */
 * {
     margin: 0;
@@ -13,6 +17,7 @@
     height: 100vh;
 }
 
+/* Active state for main container */
 .active {
     background-color: rgb(231, 230, 230);
     color: black;
@@ -29,33 +34,18 @@
 
 /* Navigation bar */
 .nav-main {
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
 }
 
-/* Icon container */
-.icon {
-    width: 120px;
-    height: 100px;
-    opacity: 1;
-    margin-left: 20px;
-    /* Adjust transparency level (0 is fully transparent, 1 is fully opaque) */
-}
 
-.icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* Elements in nav */
+/* Navigation elements */
 .elements {
     height: 40px;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin-top: 30px;
-    margin-right: 44px; 
+    margin-right: 44px;
 }
 
 .elements li {
@@ -71,18 +61,18 @@
     width: 50px;
     height: 50px;
     filter: invert(100%) brightness(200%);
-    /* White initially */
+    /* Icons are white initially */
 }
 
 .resume img,
 .linkedin img,
 .git img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
-/* Switch */
+/* Switch toggle */
 .liquid-3 {
     --primary: #fff;
     --secondary: #000;
@@ -90,8 +80,8 @@
     appearance: none;
     position: relative;
     cursor: pointer;
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 35px;
     background: var(--primary);
     border-radius: 20em;
     transform: translateX(0.5px);
@@ -124,23 +114,25 @@
 /* Landing content */
 .landing {
     padding-top: 20px;
-    padding-left: 50px;
+    padding-left: 250px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .landing-head {
     font-family: "Poppins", sans-serif;
     font-size: 25px;
+    padding-left: 50px;
 }
 
-.landing-img{
+.landing-img {
     height: 300px;
     width: 300px;
-    margin-right: 30px;
+    margin-right: 80px;
 }
 
-.landing-img img{
+.landing-img img {
     width: 250px;
     height: 300px;
     border-radius: 20px;
@@ -148,13 +140,14 @@
 }
 
 .landing-p {
-    color:white;
-    font-family: "Poppins";
+    color: white;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
-    padding-top: 40px ;
+    padding-top: 40px;
+    
 }
 
-/* Changing text, icons, and background when .active is applied */
+/* Change text and icons when .active is applied */
 .active .landing-head,
 .active .landing-p {
     color: black;
@@ -163,11 +156,50 @@
 
 .active .liquid-3 {
     --primary: #000;
-    /* Switch button turns black when active */
     --secondary: #fff;
-    /* Switch contrast changes */
     background: var(--primary);
-    /* Background to black */
+    /* Switch button background to black when active */
 }
 
-/* Skill Section*/
+/* Skill Section */
+.skill {
+    text-align: center;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+
+.skill-head{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.skill-main{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.skill-p{
+    padding: 10px;
+    font-size: 25px;
+}
+
+/*EDUCATION*/
+.edu{
+    text-align: center;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+
+.edu h1{
+    font-size: 35px;
+}
+
+.edu a{
+    color: rgb(143, 143, 248);
+}
+
+.edu h4{
+    padding: 5px;
+}
