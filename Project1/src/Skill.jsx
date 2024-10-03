@@ -14,4 +14,8 @@ const Skill = () => {
         </div>
     )
 }
+<<<<<<< HEAD
 export default Skill;
+=======
+export default  Skill;
+>>>>>>> origin/main
